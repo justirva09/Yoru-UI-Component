@@ -4,7 +4,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   variant?: "primary" | "secondary" | "success" | "danger" | "warning" | "info" | "light" | "dark";
 }
 const Button: React.FC<ButtonProps> = (props) => {
-  const { variant, children } = props;
+  const { variant = "primary", children } = props;
   return (
     <button type="button" className={`yoru-button yoru-button--${variant}`} {...props}>
       {children}

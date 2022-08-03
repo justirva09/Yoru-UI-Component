@@ -10,11 +10,10 @@
     "declaration": true,
     "declarationDir": "types",
     "sourceMap": true,
-    "rootDir": "src",
     "outDir": "dist",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true
   },
-  "exclude": ["src/stories", "**/*.stories.tsx"]
+  "exclude": ["packages/stories", "**/*.stories.tsx"]
 }
