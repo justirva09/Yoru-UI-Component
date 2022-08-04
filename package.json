@@ -3,10 +3,8 @@
   "version": "1.0.1",
   "description": "A Project for react ui components",
   "scripts": {
-    "rollup": "rollup -c",
     "test": "test",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -p 6006"
   },
   "keywords": [
     "react",
@@ -14,40 +12,36 @@
   ],
   "author": "justirva09",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.18.9",
-    "@babel/preset-env": "^7.16.4",
-    "@babel/preset-react": "^7.16.0",
-    "@babel/preset-typescript": "^7.16.0",
-    "@rollup/plugin-commonjs": "^21.0.1",
-    "@rollup/plugin-node-resolve": "^13.0.6",
-    "@rollup/plugin-typescript": "^8.3.4",
-    "@storybook/addon-actions": "^6.5.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@babel/runtime": "^7.18.9",
+    "@storybook/addon-a11y": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
-    "@storybook/addon-interactions": "^6.5.9",
-    "@storybook/addon-links": "^6.5.9",
+    "@storybook/addon-storysource": "^6.5.9",
     "@storybook/builder-webpack5": "^6.5.9",
+    "@storybook/cli": "^6.5.9",
     "@storybook/manager-webpack5": "^6.5.9",
     "@storybook/react": "^6.5.9",
-    "@storybook/testing-library": "^0.0.13",
-    "@types/react": "^18.0.15",
-    "babel-loader": "^8.2.5",
-    "rollup": "^2.60.0",
-    "rollup-plugin-dts": "^4.0.1",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^4.0.1",
-    "rollup-plugin-terser": "^7.0.2",
-    "typescript": "^4.4.4"
-  },
-  "peerDependencies": {
+    "@storybook/theming": "^6.5.9",
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.1",
+    "@types/react-dom": "^18.0.0",
+    "@yoru-ui/button": "workspace:^1.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.0.0",
+    "rimraf": "3.0.2",
+    "ts-node": "^10.7.0",
+    "tsup": "6.1.3",
+    "turbo": "^1.4.2",
+    "typescript": "^4.7.4"
   },
-  "main": "dist/cjs/index.ts",
-  "module": "dist/esm/index.ts",
-  "files": [
-    "dist"
-  ],
-  "types": "dist/index.d.ts",
-  "dependencies": {}
+  "pnpm": {
+    "overrides": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    }
+  }
 }
