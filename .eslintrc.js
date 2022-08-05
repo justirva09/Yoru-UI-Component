@@ -24,11 +24,12 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
+    project: './tsconfig.json',
+    tsconfigRootDir: __dirname,
+    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 'latest',
-    sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint', '@typescript-eslint/eslint-plugin', 'testing-library'],
   rules: {

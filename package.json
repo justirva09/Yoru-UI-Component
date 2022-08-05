@@ -11,7 +11,7 @@
     "build:fast": "turbo run build:fast",
     "typecheck": "tsc --noEmit",
     "clean": "pnpm -r --parallel exec rimraf dist .turbo *.log",
-    "prepare": "husky install"
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "keywords": [
     "react",
