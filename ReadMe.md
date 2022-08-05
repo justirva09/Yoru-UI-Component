@@ -16,7 +16,7 @@ pnpm storybook
 pnpm run build
 ```
 
-### Testing
+## Testing
 
 To test your code use
 `pnpm test` to run jest testing suite.

@@ -10,7 +10,8 @@
     "build": "turbo run build",
     "build:fast": "turbo run build:fast",
     "typecheck": "tsc --noEmit",
-    "clean": "pnpm -r --parallel exec rimraf dist .turbo *.log"
+    "clean": "pnpm -r --parallel exec rimraf dist .turbo *.log",
+    "prepare": "husky install"
   },
   "keywords": [
     "react",
