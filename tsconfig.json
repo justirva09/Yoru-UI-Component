@@ -16,7 +16,7 @@
     "allowSyntheticDefaultImports": true,
     "downlevelIteration": true
   },
-  "include": ["packages"],
+  "include": ["packages", "**/*.ts", "**/*.js", "**/*.json", "**/*.tsx", ".eslintrc.js"],
   "exclude": ["**/node_modules"],
   "ts-node": {
     "compilerOptions": {
