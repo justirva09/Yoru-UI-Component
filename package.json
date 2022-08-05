@@ -11,6 +11,8 @@
     "build:fast": "turbo run build:fast",
     "typecheck": "tsc --noEmit",
     "clean": "pnpm -r --parallel exec rimraf dist .turbo *.log",
+    "prettier": "prettier \"packages/**/*.{js,ts,tsx}\"",
+    "prettier:fix": "prettier --write packages/**/*.{js,jsx,tsx,json}",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "keywords": [
@@ -49,6 +51,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^8.0.1",
     "jest": "^28.1.3",
     "jest-environment-jsdom": "^28.1.3",
     "lint-staged": "^13.0.3",
@@ -59,7 +62,6 @@
     "ts-node": "^10.7.0",
     "tsup": "6.1.3",
     "turbo": "^1.4.2",
-    "husky": "4.3.0",
     "typescript": "^4.7.4"
   },
   "husky": {
