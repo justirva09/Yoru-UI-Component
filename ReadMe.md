@@ -1,3 +1,15 @@
 # Yoru-ui Component (WIP)
 
-Responsive and accessible React UI components built with React and Emotion
+A Project for React UI components built with React and Emotion
+
+### Run Storybook
+
+```bash
+pnpm storybook
+```
+
+### Build Command
+
+```bash
+pnpm run build
+```

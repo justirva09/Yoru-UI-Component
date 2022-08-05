@@ -1,10 +1,13 @@
 {
-  "name": "yoru-ui-testing",
-  "version": "1.0.1",
+  "name": "yoru-ui",
+  "version": "1.0.0",
   "description": "A Project for react ui components",
   "scripts": {
     "test": "test",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006",
+    "build": "turbo run build",
+    "build:fast": "turbo run build:fast",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [
     "react",
