@@ -13,7 +13,8 @@
     "clean": "pnpm -r --parallel exec rimraf dist .turbo *.log",
     "prettier": "prettier \"packages/**/*.{js,ts,tsx}\"",
     "prettier:fix": "prettier --write packages/**/*.{js,jsx,tsx,json}",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "pre-commit": "lint-staged"
   },
   "keywords": [
     "react",
