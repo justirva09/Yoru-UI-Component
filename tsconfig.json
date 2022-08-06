@@ -16,8 +16,8 @@
     "allowSyntheticDefaultImports": true,
     "downlevelIteration": true
   },
-  "include": ["@types", "packages", "scripts", "tooling", "plopfile.ts"],
-  "exclude": ["**/node_modules", "**/template*"],
+  "include": ["**/*.ts", "**/*.js", "**/*.json", "**/*.tsx", ".eslintrc.js"],
+  "exclude": ["**/node_modules"],
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS",
