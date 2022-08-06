@@ -1,4 +1,5 @@
 module.exports = {
+  root: true,
   env: {
     jest: true,
     browser: true,
@@ -31,8 +32,18 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['react', '@typescript-eslint', '@typescript-eslint/eslint-plugin', 'testing-library'],
+  plugins: ['react', '@typescript-eslint', '@typescript-eslint/eslint-plugin'],
   rules: {
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
     'no-param-reassign': 'off',
@@ -76,5 +87,6 @@ module.exports = {
     'prefer-object-spread': 'off',
     'arrow-body-style': 'off',
     'react/sort-comp': 'off',
+    'react/function-component-definition': 'off',
   },
 };
